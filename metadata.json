@@ -1,0 +1,6 @@
+{
+  "name": "Demopocrisy | Forensic Legal & Institutional Archive",
+  "description": "An investigative journalism and forensic repository mapping the institutional displacement of evidentiary review and erosion of due process (2021-2026).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

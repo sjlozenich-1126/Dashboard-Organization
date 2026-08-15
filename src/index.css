@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #F8F7F4;
+    --ink: #111111;
+    --accent: #CC0000;
+    --ink-faint: rgba(17, 17, 17, 0.08);
+    --sidebar-bg: #EFEDE8;
+    --rule: 1.5px solid var(--ink);
+    --font-serif: 'Newsreader', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'Space Mono', monospace;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.mono {
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.font-serif-headline {
+  font-family: 'Newsreader', serif;
+  letter-spacing: -0.02em;
+}
+
+.font-serif-body {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-sans-ui {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'Space Mono', monospace;
+}
+
+.h-hero {
+  font-family: 'Newsreader', serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.editorial-text {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: rgba(17, 17, 17, 0.9);
+}
+
+.highlight-box {
+  background: #CC0000;
+  color: #FFFFFF;
+  padding: 2rem;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  border: 1.5px solid #111111;
+}
+
+.stat-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+}
+
+.docket-list {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.docket-list li {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marshall-kicker {
+  background-color: #111111;
+  color: #FFE600;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.citation {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: #CC0000;
+  vertical-align: super;
+  margin: 0 0.2rem;
+  font-weight: 700;
+}
+
+.rule-border {
+  border: 1.5px solid #111111;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EFEDE8;
+}
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CC0000;
+}
